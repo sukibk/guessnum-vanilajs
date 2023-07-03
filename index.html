@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Welcome to Random Number Generator</h1>
+        <p class="desc">
+          Use your intuition to guess random number between 1-10. You will have
+          four tries
+        </p>
+      </header>
+      <section class="number-selection">
+        <form class="selection-form">
+          <input type="number" min="1" max="10" class="form-input" />
+          <button class="form-submit" type="submit">Make a guess</button>
+        </form>
+        <div class="guessed-numbers">
+          <div class="number"></div>
+          <div class="number"></div>
+          <div class="number"></div>
+          <div class="number"></div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

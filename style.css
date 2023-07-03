@@ -1,0 +1,109 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 20px;
+}
+
+body {
+  min-height: 100dvh;
+  height: 100dvh;
+  padding: 2rem;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 2rem;
+  height: 100%;
+  background-color: white;
+  border-radius: 1rem;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: rgb(97, 207, 130);
+}
+
+.desc {
+  color: rgb(93, 92, 92);
+}
+
+.form-submit {
+  margin: 1rem;
+  padding: 0.5rem 0.5rem;
+  border: none;
+  border-radius: 0.4rem;
+  text-transform: uppercase;
+  background-color: rgb(69, 186, 237);
+  color: white;
+  font-weight: bold;
+  transition: background-color 0.2s ease-out;
+}
+
+.form-submit:hover {
+  cursor: pointer;
+  background-color: rgb(72, 244, 187);
+}
+
+.form-submit:disabled {
+  background-color: gray;
+}
+
+.form-input {
+  padding: 0.2rem 0.2rem;
+  border-radius: 0.2rem;
+  border: 1px solid gray;
+}
+
+.guessed-numbers {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.number {
+  border: 0.2px solid gray;
+  height: 50px;
+  width: 50px;
+  border-radius: 0.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup {
+  position: absolute;
+  padding: 1rem;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  gap: 0.5rem;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  border-radius: 2rem;
+  background-color: white;
+  height: 300px;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.bg-blure {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.411);
+  z-index: 2;
+}
